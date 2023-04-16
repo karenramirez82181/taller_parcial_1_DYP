@@ -7,6 +7,7 @@ const Header = () => {
 		  <h1>TALLER - PARCIAL</h1>
       <button>
         <AiOutlineShoppingCart/>
+        Productos
       </button>
 	  </div>
   )
