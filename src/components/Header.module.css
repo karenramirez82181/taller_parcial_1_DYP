@@ -1,10 +1,11 @@
 .botonCarrito button {
     font-family: Arial;
-    font-size: 15px;
+    font-size: 20px;
     color: white;
     background-color: gray;
     padding: 5px 10px;
     /* width: 100%; */
     pointer-events: none;
     font-weight: bold;
+    user-select: none;
 }
