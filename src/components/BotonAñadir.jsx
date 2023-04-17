@@ -1,10 +1,13 @@
 import React from 'react'
 import styles from './BotonAñadir.module.css'
 
-const BotonAñadir = () => {
+const BotonAñadir = ({setElementosCarrito,elementosCarrito,producto}) => {
+  const handlerSubmit = ()=>{
+    setElementosCarrito([...elementosCarrito,producto]);
+  }
   return (
     <div className={styles.botonAñadirProducto}>
-        <button>Add To Cart</button>
+        <button onClick={handlerSubmit}>Add To Cart</button>
     </div>
   )
 }

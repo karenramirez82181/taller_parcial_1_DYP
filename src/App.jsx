@@ -12,6 +12,7 @@ const products = [
 
 const App = () => {
   const [productos, setProductos] = useState(products);
+  const [elementosCarrito, setElementosCarrito] = useState([])
   return (
     <div>
 
@@ -23,6 +24,8 @@ const App = () => {
       <div>
         <ListaProductos
           productos = {productos}
+          elementosCarrito = {elementosCarrito}
+          setElementosCarrito = {setElementosCarrito}
         />
         <hr />
       </div>
