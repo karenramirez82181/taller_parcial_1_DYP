@@ -14,13 +14,23 @@ const App = () => {
   const [productos, setProductos] = useState(products);
   return (
     <div>
-      <div><Header/></div>
+
+      <div>
+        <Header/>
+        <hr />
+      </div>
+      
       <div>
         <ListaProductos
           productos = {productos}
         />
+        <hr />
+      </div>
+
+      <div>
         <Carrito/>
       </div>
+      
     </div>
   )
 }

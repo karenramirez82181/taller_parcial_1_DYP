@@ -5,8 +5,12 @@ import Resumen from './Resumen'
 const Carrito = () => {
   return (
     <div>
-        <ListaCarrito/>
-        <Resumen/>
+        <div>
+          <ListaCarrito/>
+        </div>
+        <div>
+          <Resumen/>
+        </div>
     </div>
   )
 }

@@ -5,10 +5,13 @@ const Resumen = () => {
     <div>
         <div>
             <h2>Summary</h2>
+            <hr />
             <p>ENTER COUPON CODE <input type='number'/></p>
+            <hr />
             <p>SUBTOTAL</p>
             <p>SHIPPING</p>
             <p>COUPON</p>
+            <hr />
             <p>TOTAL</p>
         </div>
     </div>

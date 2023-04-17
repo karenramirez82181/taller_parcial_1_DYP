@@ -7,6 +7,7 @@ const ListaCarrito = () => {
     <div>
         <div>
             <h2>Shopping Cart</h2>
+            <hr />
         </div>
         <div>
             <p>Productos</p>
@@ -15,6 +16,9 @@ const ListaCarrito = () => {
                 //    <ProductoCarrito/>
                 //))
             }
+
+            
+            <hr />
         </div>
       
     </div>
