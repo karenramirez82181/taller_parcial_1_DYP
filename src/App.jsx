@@ -20,6 +20,7 @@ const elements = [
 const App = () => {
   const [productos, setProductos] = useState(products);
   const [elementosCarrito, setElementosCarrito] = useState(elements);
+  console.log("AP"+products.map(p => p.cantidad));
   return (
     <div>
 
@@ -42,6 +43,7 @@ const App = () => {
 
       <div>
         <Carrito
+          products = {products}
           productos = {productos}
           setProductos={setProductos}
           elementosCarrito = {elementosCarrito}

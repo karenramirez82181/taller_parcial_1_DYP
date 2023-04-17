@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const ContadorProductos = ({productos,setProductos, elementosCarrito,setElementosCarrito,elementoCarrito}) => {
 
   const handlerInput = ({target})=>{
@@ -16,8 +17,7 @@ const ContadorProductos = ({productos,setProductos, elementosCarrito,setElemento
     <div>
       <input
         type="number"
-        id='ContadorProducto'
-        value={elementoCarrito.cantidad} 
+        value={elementoCarrito.cantidad}
         onChange={handlerInput}/>
     </div>
   )
