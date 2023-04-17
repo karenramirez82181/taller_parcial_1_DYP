@@ -2,7 +2,7 @@ import React from 'react'
 import ImagenProducto from './ImagenProducto'
 import ContadorProductos from './ContadorProductos'
 
-const ProductoCarrito = ({precio,nombre,imagen,descripcion,productos,setProductos, elementosCarrito,setElementosCarrito,elementoCarrito}) => {
+const ProductoCarrito = ({precio,nombre,imagen,descripcion,productos,setProductos, elementosCarrito,setElementosCarrito,elementoCarrito, inputCantidad, setInputCantidad}) => {
   return (
     <div>
         <ImagenProducto imagen={imagen}/>
@@ -15,6 +15,8 @@ const ProductoCarrito = ({precio,nombre,imagen,descripcion,productos,setProducto
           elementosCarrito = {elementosCarrito}
           setElementosCarrito = {setElementosCarrito}
           elementoCarrito={elementoCarrito}
+          inputCantidad = {inputCantidad}
+          setInputCantidad = {setInputCantidad}
         />
     </div>
   )
