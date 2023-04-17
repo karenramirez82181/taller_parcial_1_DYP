@@ -43,7 +43,6 @@ const App = () => {
 
       <div>
         <Carrito
-          products = {products}
           productos = {productos}
           setProductos={setProductos}
           elementosCarrito = {elementosCarrito}
