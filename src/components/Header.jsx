@@ -5,11 +5,15 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 const Header = () => {
   return (
     <div className={styles.botonCarrito}>
-		  <h1>TALLER - PARCIAL</h1>
-      <button>
-        <AiOutlineShoppingCart/>
-        Productos
-      </button>
+		  <div>
+        <h1>Taller 1</h1>
+      </div>
+      <div>
+        <button>
+          <AiOutlineShoppingCart/>
+          Productos
+        </button>
+      </div>
 	  </div>
   )
 }

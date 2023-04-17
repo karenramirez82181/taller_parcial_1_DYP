@@ -1,3 +1,10 @@
+.botonCarrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+}
+
 .botonCarrito button {
     font-family: Arial;
     font-size: 20px;
@@ -10,3 +17,7 @@
     user-select: none;
 }
 
+.botonCarrito div h1 {
+    font-family: Arial;
+    font-size: 45px;
+}
