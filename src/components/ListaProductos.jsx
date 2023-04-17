@@ -9,9 +9,11 @@ const ListaProductos = ({productos}) => {
       {
         productos.map(producto => (
           <Producto 
-          precio={producto.precio}
-          nombre={producto.nombre}
-          imagen={producto.imagen}/>
+            key={producto.id}
+            precio={producto.precio}
+            nombre={producto.nombre}
+            imagen={producto.imagen}
+          />
         ))
       } 
     </div>
