@@ -6,8 +6,8 @@ const App = () => {
   const [productos, setProductos] = useState([]);
   return (
     <div>
-      <Header/>
-      <ListaProductos/>
+      <div><Header/></div>
+      <div><ListaProductos/></div>
     </div>
   )
 }
