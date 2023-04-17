@@ -20,7 +20,6 @@ const elements = [
 const App = () => {
   const [productos, setProductos] = useState(products);
   const [elementosCarrito, setElementosCarrito] = useState(elements);
-  const [inputCantidad,setInputCantidad] = useState('');
   return (
     <div>
 
@@ -47,8 +46,6 @@ const App = () => {
           setProductos={setProductos}
           elementosCarrito = {elementosCarrito}
           setElementosCarrito = {setElementosCarrito}
-          inputCantidad = {inputCantidad}
-          setInputCantidad = {setInputCantidad}
         />
       </div>
       

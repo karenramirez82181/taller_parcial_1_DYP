@@ -1,11 +1,14 @@
 import React from 'react'
-import { useEffect } from "react";
 
-const ContadorProductos = ({productos,setProductos, elementosCarrito,setElementosCarrito,elementoCarrito,inputCantidad, setInputCantidad}) => {
-  const cantidadProductos= null;
+const ContadorProductos = ({productos,setProductos, elementosCarrito,setElementosCarrito,elementoCarrito}) => {
 
   const handlerInput = ({target})=>{
-    console.log("target"+target.value);
+    const movimiento = parseInt(target.value)<elementoCarrito.cantidad?'R':'S';
+
+    const newProductos = productos.map(
+      p => p.id === elementoCarrito.id ? {...p, cantidad:movimiento==='S'?p.cantidad-1:p.cantidad+1} : p);
+    setProductos(newProductos);
+    
     const newElementos = elementosCarrito.map(e => e.id === elementoCarrito.id ? {...e,cantidad:parseInt(target.value)}:e);
     setElementosCarrito(newElementos);
   };
@@ -15,7 +18,7 @@ const ContadorProductos = ({productos,setProductos, elementosCarrito,setElemento
         type="number"
         id='ContadorProducto'
         value={elementoCarrito.cantidad} 
-        onInput={handlerInput}/>
+        onChange={handlerInput}/>
     </div>
   )
 }
