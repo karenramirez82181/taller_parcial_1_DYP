@@ -3,6 +3,8 @@ import styles from './BotonAñadir.module.css'
 
 const BotonAñadir = ({productos,setProductos,setElementosCarrito,elementosCarrito,producto}) => {
   const handlerSubmit = () => {
+    //Esta linea esta cagando esa resta en products
+    console.log("AÑADIR " + productos.filter(p => p.id === producto.id ? {...producto, cantidad:producto.cantidad -= 1} : p));
     const newProductos = productos.map(p => p.id === producto.id ? {...producto, cantidad:producto.cantidad -= 1} : p);
     setProductos(newProductos);
     const newElementos = elementosCarrito.map(e => e.id === producto.id ? {...e, cantidad:e.cantidad += 1} : e);
