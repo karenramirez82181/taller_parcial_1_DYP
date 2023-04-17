@@ -8,7 +8,6 @@ const Carrito = ({productos,setProductos, elementosCarrito,setElementosCarrito})
     <div>
         <div>
           <ListaCarrito
-            products = {products}
             productos = {productos}
             setProductos={setProductos}
             elementosCarrito = {elementosCarrito}
