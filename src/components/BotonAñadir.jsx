@@ -5,7 +5,8 @@ const BotonAñadir = ({productos,setProductos,setElementosCarrito,elementosCarri
   const handlerSubmit = () => {
     const newProductos = productos.map(p => p.id === producto.id ? {...producto, cantidad:producto.cantidad -= 1} : p);
     setProductos(newProductos);
-    setElementosCarrito([...elementosCarrito,producto]);
+    const newElementos = elementosCarrito.map(e => e.id === producto.id ? {...e, cantidad:e.cantidad += 1} : e);
+    setElementosCarrito(newElementos);
   }
   return (
     <div className = {styles.botonAñadirProducto}>

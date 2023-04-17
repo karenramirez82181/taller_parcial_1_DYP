@@ -11,18 +11,20 @@ const ListaCarrito = ({productos,setProductos, elementosCarrito,setElementosCarr
         </div>
         <div>
             {
-              elementosCarrito.map(elementoCarrito => (
+              elementosCarrito.map(elementoCarrito => elementoCarrito.cantidad>0?(
                   <ProductoCarrito
-                    precio = {elementoCarrito.precio}
-                    nombre = {elementoCarrito.nombre}
-                    imagen = {elementoCarrito.imagen}
-                    descripcion = {elementoCarrito.descripcion}
+                    key={elementoCarrito.id}
+                    precio = {productos.filter(p=>p.id === elementoCarrito.id).map(p=>p.precio)}
+                    nombre = {productos.filter(p=>p.id === elementoCarrito.id).map(p=>p.nombre)}
+                    imagen = {productos.filter(p=>p.id === elementoCarrito.id).map(p=>p.imagen)}
+                    descripcion = {productos.filter(p=>p.id === elementoCarrito.id).map(p=>p.descripcion)}
                     productos = {productos}
                     setProductos={setProductos}
                     elementosCarrito = {elementosCarrito}
                     setElementosCarrito = {setElementosCarrito}
+                    elementoCarrito={elementoCarrito}
                   />
-              ))
+              ):null)
             }
 
             

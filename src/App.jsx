@@ -10,15 +10,22 @@ const products = [
   {id:'4u',nombre:'Nike Zoom Freak 4',precio:150,cantidad:3 ,descripcion:'Really good Nike shoes',imagen:'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f7382cc9-e11d-4e9f-90d0-8f9ec482432a/zoom-freak-4-zapatillas-de-baloncesto-Qzzkpn.png'}
 ]
 
+const elements = [
+  {id:'1u',cantidad:0},
+  {id:'2u',cantidad:0},
+  {id:'3u',cantidad:0},
+  {id:'4u',cantidad:0}
+]
+
 const App = () => {
   const [productos, setProductos] = useState(products);
-  const [elementosCarrito, setElementosCarrito] = useState([])
+  const [elementosCarrito, setElementosCarrito] = useState(elements)
   return (
     <div>
 
       <div>
         <Header 
-          cantidadElementosCarrito={elementosCarrito.length}
+          elementosCarrito={elementosCarrito}
         />
         <hr />
       </div>
