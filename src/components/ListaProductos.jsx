@@ -2,7 +2,7 @@ import React from 'react'
 import Producto from './Producto'
 
 
-const ListaProductos = ({productos, elementosCarrito,setElementosCarrito}) => {
+const ListaProductos = ({productos,setProductos, elementosCarrito,setElementosCarrito}) => {
     
   return (
     <div>
@@ -13,6 +13,8 @@ const ListaProductos = ({productos, elementosCarrito,setElementosCarrito}) => {
             precio={producto.precio}
             nombre={producto.nombre}
             imagen={producto.imagen}
+            productos={productos}
+            setProductos={setProductos}
             elementosCarrito={elementosCarrito}
             setElementosCarrito={setElementosCarrito}
             producto={producto}

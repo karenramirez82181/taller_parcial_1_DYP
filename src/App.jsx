@@ -17,13 +17,14 @@ const App = () => {
     <div>
 
       <div>
-        <Header/>
+        <Header cantidadElementosCarrito={elementosCarrito.length}/>
         <hr />
       </div>
       
       <div>
         <ListaProductos
           productos = {productos}
+          setProductos={setProductos}
           elementosCarrito = {elementosCarrito}
           setElementosCarrito = {setElementosCarrito}
         />

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Header.module.css'
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
-const Header = () => {
+const Header = ({cantidadElementosCarrito}) => {
   return (
     <div className={styles.botonCarrito}>
 		  <div>
@@ -11,7 +11,7 @@ const Header = () => {
       <div>
         <button>
           <AiOutlineShoppingCart/>
-          Productos
+          {` ${cantidadElementosCarrito} Productos`}
         </button>
       </div>
 	  </div>
