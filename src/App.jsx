@@ -17,7 +17,9 @@ const App = () => {
     <div>
 
       <div>
-        <Header cantidadElementosCarrito={elementosCarrito.length}/>
+        <Header 
+          cantidadElementosCarrito={elementosCarrito.length}
+        />
         <hr />
       </div>
       

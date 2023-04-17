@@ -6,7 +6,7 @@ const Resumen = () => {
         <div>
             <h2>Summary</h2>
             <hr />
-            <p>ENTER COUPON CODE <input type='number'/></p>
+            <p>ENTER COUPON CODE <input type='number' min='0' max='100'/></p>
             <hr />
             <p>SUBTOTAL</p>
             <p>SHIPPING</p>
