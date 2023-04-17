@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ContadorProductos = () => {
+const ContadorProductos = ({productos,setProductos, elementosCarrito,setElementosCarrito}) => {
   return (
     <div>
-      <input type="number" name="" id="" />
+      <input type="number"/>
     </div>
   )
 }

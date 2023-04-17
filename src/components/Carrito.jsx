@@ -2,11 +2,16 @@ import React from 'react'
 import ListaCarrito from './ListaCarrito'
 import Resumen from './Resumen'
 
-const Carrito = () => {
+const Carrito = ({productos,setProductos, elementosCarrito,setElementosCarrito}) => {
   return (
     <div>
         <div>
-          <ListaCarrito/>
+          <ListaCarrito
+            productos = {productos}
+            setProductos={setProductos}
+            elementosCarrito = {elementosCarrito}
+            setElementosCarrito = {setElementosCarrito}
+          />
         </div>
         <div>
           <Resumen/>

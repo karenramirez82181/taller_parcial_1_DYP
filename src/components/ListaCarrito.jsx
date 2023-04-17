@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductoCarrito from './ProductoCarrito'
 
-const ListaCarrito = () => {
+const ListaCarrito = ({productos,setProductos, elementosCarrito,setElementosCarrito}) => {
   return (
     
     <div>
@@ -10,11 +10,19 @@ const ListaCarrito = () => {
             <hr />
         </div>
         <div>
-            <p>Productos</p>
             {
-                //productos.map(producto => (
-                //    <ProductoCarrito/>
-                //))
+              elementosCarrito.map(elementoCarrito => (
+                  <ProductoCarrito
+                    precio = {elementoCarrito.precio}
+                    nombre = {elementoCarrito.nombre}
+                    imagen = {elementoCarrito.imagen}
+                    descripcion = {elementoCarrito.descripcion}
+                    productos = {productos}
+                    setProductos={setProductos}
+                    elementosCarrito = {elementosCarrito}
+                    setElementosCarrito = {setElementosCarrito}
+                  />
+              ))
             }
 
             
