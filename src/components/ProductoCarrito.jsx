@@ -12,7 +12,6 @@ const ProductoCarrito = ({precio,nombre,imagen,descripcion,productos,setProducto
         <p>{descripcion}</p>
         <p>{precio}</p>
         <ContadorProductos
-          products = {products}
           productos = {productos}
           setProductos={setProductos}
           elementosCarrito = {elementosCarrito}
