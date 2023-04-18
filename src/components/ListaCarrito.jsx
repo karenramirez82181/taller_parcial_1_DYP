@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductoCarrito from './ProductoCarrito'
 
-const ListaCarrito = ({productos,setProductos, elementosCarrito,setElementosCarrito}) => {
+const ListaCarrito = ({products,productos,setProductos, elementosCarrito,setElementosCarrito}) => {
 
   return (
     
@@ -14,6 +14,7 @@ const ListaCarrito = ({productos,setProductos, elementosCarrito,setElementosCarr
             {
               elementosCarrito.map(elementoCarrito => elementoCarrito.cantidad>0?(
                   <ProductoCarrito
+                  products = {products}
                     key={elementoCarrito.id}
                     precio = {productos.filter(p=>p.id === elementoCarrito.id).map(p=>p.precio)}
                     nombre = {productos.filter(p=>p.id === elementoCarrito.id).map(p=>p.nombre)}
