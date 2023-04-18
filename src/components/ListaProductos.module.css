@@ -4,8 +4,3 @@
     grid-template-rows: repeat(2, 1fr); /* 2 filas con altura igual */
     gap: 10px; /* Espacio entre los componentes */
 }
-  
-.gridContainer div {
-    background-color: #ccc; /* Color de fondo de cada componente */
-    padding: 10px; /* Espacio interno de cada componente */
-}
