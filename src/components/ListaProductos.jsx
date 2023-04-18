@@ -8,17 +8,19 @@ const ListaProductos = ({productos,setProductos, elementosCarrito,setElementosCa
     <div>
       {
         productos.map(producto => (
-          <Producto 
-            key={producto.id}
-            precio={producto.precio}
-            nombre={producto.nombre}
-            imagen={producto.imagen}
-            productos={productos}
-            setProductos={setProductos}
-            elementosCarrito={elementosCarrito}
-            setElementosCarrito={setElementosCarrito}
-            producto={producto}
-          />
+          <div>
+            <Producto 
+              key={producto.id}
+              precio={producto.precio}
+              nombre={producto.nombre}
+              imagen={producto.imagen}
+              productos={productos}
+              setProductos={setProductos}
+              elementosCarrito={elementosCarrito}
+              setElementosCarrito={setElementosCarrito}
+              producto={producto}
+            />
+          </div>
         ))
       } 
     </div>
