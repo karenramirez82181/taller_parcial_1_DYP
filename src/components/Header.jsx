@@ -3,7 +3,7 @@ import styles from './Header.module.css'
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Header = ({elementosCarrito}) => {
-  const cantidad = elementosCarrito.reduce((contador,p) => contador+=p.cantidad,0);
+  const cantidad = elementosCarrito.reduce((contador,p) => contador + p.cantidad, 0);
   return (
     <div className={styles.botonCarrito}>
 		  <div>

@@ -44,7 +44,7 @@ const App = () => {
 
       <div>
         {
-          elementosCarrito.reduce((contador,p) => contador+=p.cantidad,0) > 0 ?
+          elementosCarrito.reduce((contador,p) => contador + p.cantidad, 0) > 0 ?
             <Carrito
             products = {products}
             productos = {productos}
