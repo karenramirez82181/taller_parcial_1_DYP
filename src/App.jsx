@@ -27,7 +27,7 @@ const App = () => {
 
       <div>
         <Header 
-          elementosCarrito={elementosCarrito}
+          elementosCarrito = {elementosCarrito}
         />
         <hr />
       </div>
@@ -35,7 +35,7 @@ const App = () => {
       <div>
         <ListaProductos
           productos = {productos}
-          setProductos={setProductos}
+          setProductos = {setProductos}
           elementosCarrito = {elementosCarrito}
           setElementosCarrito = {setElementosCarrito}
         />
@@ -48,7 +48,7 @@ const App = () => {
             <Carrito
               products = {products}
               productos = {productos}
-              setProductos={setProductos}
+              setProductos = {setProductos}
               elementosCarrito = {elementosCarrito}
               setElementosCarrito = {setElementosCarrito}
             />

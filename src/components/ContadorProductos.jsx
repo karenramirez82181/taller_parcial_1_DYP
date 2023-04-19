@@ -39,19 +39,17 @@ const ContadorProductos = ({products,productos,setProductos, elementosCarrito,se
         p => p.id === elementoCarrito.id ? {...p, cantidad:products.filter(pr => pr.id === elementoCarrito.id).map(pr => pr.cantidad)[0]} : p);
         setProductos(newProductos);
     }
-    
-    
-
   };
   
   return (
     <div>
       <input
-        type="number"
-        value={elementoCarrito.cantidad}
-        onChange={handlerInput}
-        min="0"
-        max={products.filter(p => p.id === elementoCarrito.id).map(p => p.cantidad)}/>
+        type = "number"
+        value = {elementoCarrito.cantidad}
+        onChange = {handlerInput}
+        min = "0"
+        max = {products.filter(p => p.id === elementoCarrito.id).map(p => p.cantidad)}
+      />
     </div>
   )
 }

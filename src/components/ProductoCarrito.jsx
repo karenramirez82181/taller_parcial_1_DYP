@@ -7,7 +7,7 @@ const ProductoCarrito = ({products,precio,nombre,imagen,descripcion,productos,se
 
   return (
     <div>
-        <ImagenProducto imagen={imagen}/>
+        <ImagenProducto imagen = {imagen}/>
         <p>{nombre}</p>
         <p>{descripcion}</p>
         <p>{precio}</p>
@@ -17,7 +17,7 @@ const ProductoCarrito = ({products,precio,nombre,imagen,descripcion,productos,se
           setProductos={setProductos}
           elementosCarrito = {elementosCarrito}
           setElementosCarrito = {setElementosCarrito}
-          elementoCarrito={elementoCarrito}
+          elementoCarrito = {elementoCarrito}
         />
     </div>
   )

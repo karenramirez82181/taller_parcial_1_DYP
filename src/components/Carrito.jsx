@@ -6,21 +6,21 @@ const Carrito = ({products,productos,setProductos, elementosCarrito,setElementos
 
   return (
     <div>
-        <div>
-          <ListaCarrito
-            products = {products}
-            productos = {productos}
-            setProductos={setProductos}
-            elementosCarrito = {elementosCarrito}
-            setElementosCarrito = {setElementosCarrito}
-          />
-        </div>
-        <div>
-          <Resumen
-            productos = {productos}
-            elementosCarrito = {elementosCarrito}
-          />
-        </div>
+      <div>
+        <ListaCarrito
+          products = {products}
+          productos = {productos}
+          setProductos= {setProductos}
+          elementosCarrito = {elementosCarrito}
+          setElementosCarrito = {setElementosCarrito}
+        />
+      </div>
+      <div>
+        <Resumen
+          productos = {productos}
+          elementosCarrito = {elementosCarrito}
+        />
+      </div>
     </div>
   )
 }

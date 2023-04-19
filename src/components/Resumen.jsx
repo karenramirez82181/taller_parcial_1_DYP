@@ -18,7 +18,7 @@ const Resumen = ({productos, elementosCarrito}) => {
         <div>
           <h2>Summary</h2>
           <hr />
-          <p>ENTER COUPON CODE <input type='number' min='0' max='100' onChange={ObtenerValorCupon} value={valorCupon}/></p>
+          <p>ENTER COUPON CODE <input type = 'number' min = '0' max = '100' onChange = {ObtenerValorCupon} value = {valorCupon}/></p>
           <hr />
           <p>SUBTOTAL <input type = "text" readOnly value = {`$${subtotal}`}/></p>
           <p>SHIPPING <input type = "text" readOnly value = {'FREE'}/></p>
