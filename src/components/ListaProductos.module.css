@@ -1,6 +1,6 @@
 .gridContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas con ancho igual */
-    grid-template-rows: repeat(2, 1fr); /* 2 filas con altura igual */
-    gap: 10px; /* Espacio entre los componentes */
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
 }
