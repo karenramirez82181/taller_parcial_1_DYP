@@ -9,7 +9,15 @@ const Resumen = ({productos, elementosCarrito}) => {
   const total = subtotal - valorCupon;
 
   const ObtenerValorCupon = ({target}) => {
-    setValorCupon(parseInt(target.value));
+
+    if(target.value != '')
+    {
+      setValorCupon(parseInt(target.value) <= 100 ? parseInt(target.value) : 100);
+    }
+    else
+    {
+      setValorCupon(0);
+    }
   }
   
   return (
@@ -17,13 +25,13 @@ const Resumen = ({productos, elementosCarrito}) => {
         <div>
           <h2>Summary</h2>
           <hr />
-          <p>ENTER COUPON CODE <input type='number' inputMode='none' min='0' max='100' onChange={ObtenerValorCupon} defaultValue={0}/></p>
+          <p>ENTER COUPON CODE <input type='number' inputMode='none' min='0' max='100' onChange={ObtenerValorCupon} value={valorCupon}/></p>
           <hr />
-          <p>SUBTOTAL <input type="text" readOnly value = {subtotal}/></p>
-          <p>SHIPPING <input type="text" readOnly value={'FREE'}/></p>
-          <p>COUPON <input type="text" readOnly value={valorCupon}/></p>
+          <p>SUBTOTAL <input type = "text" readOnly value = {`$${subtotal}`}/></p>
+          <p>SHIPPING <input type = "text" readOnly value ={'FREE'}/></p>
+          <p>COUPON <input type = "text" readOnly value ={`$${valorCupon}`}/></p>
           <hr />
-          <p>TOTAL <input type="text" readOnly value={total}/></p>
+          <p>TOTAL <input type = "text" readOnly value ={`$${total}`}/></p>
         </div>
     </div>
   )
