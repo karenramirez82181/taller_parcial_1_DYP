@@ -8,7 +8,6 @@ const ListaProductos = ({productos,setProductos, elementosCarrito,setElementosCa
     <div className={styles.gridContainer}>
       {
         productos.map(producto => (
-          <div>
             <Producto 
               key={producto.id}
               precio={producto.precio}
@@ -20,7 +19,6 @@ const ListaProductos = ({productos,setProductos, elementosCarrito,setElementosCa
               setElementosCarrito={setElementosCarrito}
               producto={producto}
             />
-          </div>
         ))
       } 
     </div>
