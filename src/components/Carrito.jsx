@@ -16,7 +16,10 @@ const Carrito = ({products,productos,setProductos, elementosCarrito,setElementos
           />
         </div>
         <div>
-          <Resumen/>
+          <Resumen
+            productos = {productos}
+            elementosCarrito = {elementosCarrito}
+          />
         </div>
     </div>
   )

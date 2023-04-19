@@ -46,12 +46,13 @@ const App = () => {
         {
           elementosCarrito.reduce((contador,p) => contador + p.cantidad, 0) > 0 ?
             <Carrito
-            products = {products}
-            productos = {productos}
-            setProductos={setProductos}
-            elementosCarrito = {elementosCarrito}
-            setElementosCarrito = {setElementosCarrito}/>
-            : null
+              products = {products}
+              productos = {productos}
+              setProductos={setProductos}
+              elementosCarrito = {elementosCarrito}
+              setElementosCarrito = {setElementosCarrito}
+            />
+          : null
         }
       </div>
       
