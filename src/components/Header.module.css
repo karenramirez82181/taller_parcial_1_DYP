@@ -15,9 +15,10 @@
     pointer-events: none;
     font-weight: bold;
     user-select: none;
+    border-radius: 6spx;
 }
 
 .botonCarrito div h1 {
     font-family: Arial;
-    font-size: 45px;
+    font-size: 48px;
 }

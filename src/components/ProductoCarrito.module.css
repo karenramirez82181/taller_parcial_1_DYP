@@ -1,0 +1,34 @@
+.productocarrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fdfdfd;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.productocarrito img {
+    width: 160px;
+        height: 160px;
+        border-radius: 8px;
+        
+}
+
+.descripcion{
+    font-size: 18px;
+        margin: 2px;
+}
+.nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 3px;
+}
+
+.precio {
+    font-size: 18px;
+    margin: 2px;
+
+}

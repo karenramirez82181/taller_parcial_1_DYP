@@ -9,18 +9,18 @@ const ListaProductos = ({
 	setElementosCarrito,
 }) => {
 	return (
-		<div className = {styles.gridContainer}>
+		<div className={styles.gridContainer}>
 			{productos.map(producto => (
 				<Producto
-					key = {producto.id}
-					precio = {producto.precio}
-					nombre = {producto.nombre}
-					imagen = {producto.imagen}
-					productos = {productos}
-					setProductos = {setProductos}
-					elementosCarrito = {elementosCarrito}
-					setElementosCarrito = {setElementosCarrito}
-					producto = {producto}
+					key={producto.id}
+					precio={producto.precio}
+					nombre={producto.nombre}
+					imagen={producto.imagen}
+					productos={productos}
+					setProductos={setProductos}
+					elementosCarrito={elementosCarrito}
+					setElementosCarrito={setElementosCarrito}
+					producto={producto}
 				/>
 			))}
 		</div>

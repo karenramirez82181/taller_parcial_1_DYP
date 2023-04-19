@@ -3,8 +3,8 @@ import styles from './ImagenProducto.module.css';
 
 const ImagenProducto = ({ imagen }) => {
 	return (
-		<div className = {styles.imagenDelProducto}>
-			<img src = {imagen}/>
+		<div className={styles.imagenDelProducto}>
+			<img src={imagen} />
 		</div>
 	);
 };

@@ -24,31 +24,31 @@ const App = () => {
 
   return (
     <div>
-
+      
       <div>
         <Header 
-          elementosCarrito = {elementosCarrito}
+          elementosCarrito={elementosCarrito}
         />
         <hr />
       </div>
-      
-      <div>
+      <div className='general' >
+        <div className='background_summary2'>
         <ListaProductos
           productos = {productos}
-          setProductos = {setProductos}
+          setProductos={setProductos}
           elementosCarrito = {elementosCarrito}
           setElementosCarrito = {setElementosCarrito}
         />
         <hr />
       </div>
-
+      </div>
       <div>
         {
           elementosCarrito.reduce((contador,p) => contador + p.cantidad, 0) > 0 ?
             <Carrito
               products = {products}
               productos = {productos}
-              setProductos = {setProductos}
+              setProductos={setProductos}
               elementosCarrito = {elementosCarrito}
               setElementosCarrito = {setElementosCarrito}
             />

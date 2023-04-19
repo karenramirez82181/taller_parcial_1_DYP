@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import './container.css'
 
 const Resumen = ({productos, elementosCarrito}) => {
 
@@ -14,17 +15,17 @@ const Resumen = ({productos, elementosCarrito}) => {
   }
   
   return (
-    <div>
+    <div className='background_summary'>
         <div>
           <h2>Summary</h2>
           <hr />
-          <p>ENTER COUPON CODE <input type = 'number' min = '0' max = '100' onChange = {ObtenerValorCupon} value = {valorCupon}/></p>
+          <p className='title_cupon'>ENTER COUPON CODE <input type='number' min='0' max='100' onChange={ObtenerValorCupon} value={valorCupon}/></p>
           <hr />
           <p>SUBTOTAL <input type = "text" readOnly value = {`$${subtotal}`}/></p>
           <p>SHIPPING <input type = "text" readOnly value = {'FREE'}/></p>
           <p>COUPON <input type = "text" readOnly value = {`$${valorCupon}`}/></p>
           <hr />
-          <p>TOTAL <input type = "text" readOnly value = {`$${total}`}/></p>
+        <p className='title_total'>TOTAL <input type = "text" readOnly value = {`$${total}`}/></p>
         </div>
     </div>
   )

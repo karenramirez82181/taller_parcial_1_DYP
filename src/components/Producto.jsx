@@ -14,19 +14,19 @@ const Producto = ({
 	producto,
 }) => {
 	return (
-		<div className = {styles.cardProduct}>
-			<ImagenProducto imagen = {imagen} />
-			<div className = {styles.contentCard}>
-				<div className = {styles.texts}>
-					<p className = {styles.name}>{nombre}</p>
-					<p className = {styles.price}>${precio}</p>
+		<div className={styles.cardProduct}>
+			<ImagenProducto imagen={imagen} />
+			<div className={styles.contentCard}>
+				<div className={styles.texts}>
+					<p className={styles.name}>{nombre}</p>
+					<p className={styles.price}>${precio}</p>
 				</div>
 				<BotonAñadir
-					productos = {productos}
-					setProductos = {setProductos}
-					setElementosCarrito = {setElementosCarrito}
-					elementosCarrito = {elementosCarrito}
-					producto = {producto}
+					productos={productos}
+					setProductos={setProductos}
+					setElementosCarrito={setElementosCarrito}
+					elementosCarrito={elementosCarrito}
+					producto={producto}
 				/>
 			</div>
 		</div>
