@@ -4,6 +4,7 @@ const Resumen = () => {
   return (
     <div>
         <div>
+          
             <h2>Summary</h2>
             <hr />
             <p>ENTER COUPON CODE <input type='number' min='0' max='100'/></p>

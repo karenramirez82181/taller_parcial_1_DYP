@@ -43,13 +43,16 @@ const App = () => {
       </div>
 
       <div>
-        <Carrito
-          products = {products}
-          productos = {productos}
-          setProductos={setProductos}
-          elementosCarrito = {elementosCarrito}
-          setElementosCarrito = {setElementosCarrito}
-        />
+        {
+          elementosCarrito.reduce((contador,p) => contador+=p.cantidad,0) > 0 ?
+            <Carrito
+            products = {products}
+            productos = {productos}
+            setProductos={setProductos}
+            elementosCarrito = {elementosCarrito}
+            setElementosCarrito = {setElementosCarrito}/>
+            : null
+        }
       </div>
       
     </div>
