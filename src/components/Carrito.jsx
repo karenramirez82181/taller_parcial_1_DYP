@@ -6,8 +6,8 @@ import './container.css'
 const Carrito = ({products,productos,setProductos, elementosCarrito,setElementosCarrito}) => {
 
   return (
-    <div class="container">
-      <div class="box">
+    <div className="container">
+      <div className="box">
           <ListaCarrito
             products = {products}
             productos = {productos}
@@ -16,7 +16,7 @@ const Carrito = ({products,productos,setProductos, elementosCarrito,setElementos
             setElementosCarrito = {setElementosCarrito}
           />
         </div>
-      <div class="box2">
+      <div className="box2">
           <Resumen
             productos = {productos}
             elementosCarrito = {elementosCarrito}
