@@ -13,6 +13,7 @@ const ContadorProductos = ({products,productos,setProductos, elementosCarrito,se
       p => p.id === elementoCarrito.id ? {...p, cantidad:movimiento === 'Suma' ? p.cantidad - 1 : p.cantidad + 1} : p);
     setProductos(newProductos);
   };
+  
   return (
     <div>
       <input
